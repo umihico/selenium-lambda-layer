@@ -1,0 +1,6 @@
+selenium
+requests
+Pillow
+lxml
+numpy
+Flask
