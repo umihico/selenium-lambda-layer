@@ -1,5 +1,12 @@
 import json
 
+import selenium
+import requests
+import PIL
+import lxml
+import numpy
+import flask
+
 
 def hello(event, context):
     body = {
