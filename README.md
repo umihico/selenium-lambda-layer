@@ -7,4 +7,5 @@ You can only specify up to 5 layers in your lambda. Let's squeeze modules into o
 
 That's it!
 
-If you want to include some binary files like `headless-chromium` and `chromedriver`, yes you can do it. Please check out [selenium branch](https://github.com/umihico/fav-py-modules/tree/selenium).
+If you want to include some binary files like `headless-chromium` and `chromedriver`, yes you can do it. Please check out [publish_selenium_layer.sh](https://github.com/umihico/fav-py-modules/blob/selenium/publish_selenium_layer.sh) and [scraping.py](https://github.com/umihico/fav-py-modules/blob/selenium/scraping.py).
+This selenium binaries works with python 3.7. not with 3.8 :(
