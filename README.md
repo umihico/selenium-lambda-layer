@@ -1,11 +1,12 @@
-You can only specify up to 5 layers in your lambda. Let's squeeze modules into one layer and hack this rule.
+AWS lambda & selenium & python is powerful solution, but requirements conflicts are sensitive.
+You can upload them as lambda layer and you don't need to be careful and upload them every time ;)
 
-+ clone this repository
-+ edit `requirements.txt` as you want
-+ replace arugments of `--layer-name`, `--region` and `--runtime` in `publish_layer.sh`.
-+ `sh publish_layer.sh`
++ run [publish_selenium_layer.sh](https://github.com/umihico/selenium-lambda-layer/blob/master/publish_selenium_layer.sh)
++ open lambda function and use [scraping.py](https://github.com/umihico/selenium-lambda-layer/blob/master/scraping.py) as example.
++ import the layer above script created.
 
 That's it!
 
-If you want to include some binary files like `headless-chromium` and `chromedriver`, yes you can do it. Please check out [publish_selenium_layer.sh](https://github.com/umihico/fav-py-modules/blob/selenium/publish_selenium_layer.sh) and [scraping.py](https://github.com/umihico/fav-py-modules/blob/selenium/scraping.py).
-This selenium binaries works with python 3.7. not with 3.8 :(
+This selenium binaries works with python 3.7. NOT with 3.8 :(
+
+If you don't want create function and import this layer for each scraping purposes, please visit my project [pythonista-chromeless](https://github.com/umihico/pythonista-chromeless/)
