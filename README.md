@@ -10,4 +10,6 @@ That's it!
 
 This selenium binaries works with python 3.7. **NOT with 3.8 :(**
 
+If you want Python 3.8, you need to deploy as docker container image instead of lambda layer, pleate visit [docker-selenium-lambda](https://github.com/umihico/docker-selenium-lambda)
+
 If you don't want to create function and import this layer for each scraping purposes, please visit my project [pythonista-chromeless](https://github.com/umihico/pythonista-chromeless/)
